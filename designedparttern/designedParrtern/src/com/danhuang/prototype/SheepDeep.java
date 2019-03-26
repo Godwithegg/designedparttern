@@ -16,7 +16,7 @@ public class SheepDeep implements Cloneable {
 	protected Object clone() throws CloneNotSupportedException {
 		Object obj = super.clone(); // 直接调用object对象的clone方法
 
-		// 添加如下代码实现复制(deep clone)
+		// 添加如下代码实现深克隆(deep clone)
 		SheepDeep s = (SheepDeep) obj;
 		s.birthday = (Date) this.birthday.clone();
 		// s.sname = (String) this.sname.cl;
