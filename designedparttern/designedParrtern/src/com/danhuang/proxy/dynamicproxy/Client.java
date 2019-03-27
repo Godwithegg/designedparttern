@@ -1,5 +1,7 @@
 package com.danhuang.proxy.dynamicproxy;
 
+import java.lang.reflect.Proxy;
+
 /**
  * æ≤Ã¨¥˙¿Ì≤‚ ‘
  * @author danhuang
@@ -7,12 +9,10 @@ package com.danhuang.proxy.dynamicproxy;
  */
 public class Client {
 	public static void main(String[] args) {
-		Star real = new RealStar();
-		Star proxy = new ProxyStar(real);
-		proxy.confer();
-		proxy.signContract();
-		proxy.bookTicket();
+		Star realStar = new RealStar();
+		StarHandler handler = new StarHandler(realStar);
+		
+		Star proxy = (Star) Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(), new Class[] {Star.class}, handler);
 		proxy.sing();
-		proxy.collectMoney();
 	}
 }

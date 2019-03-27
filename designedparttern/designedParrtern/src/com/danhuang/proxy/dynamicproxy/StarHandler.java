@@ -1,4 +1,4 @@
-package com.danhuang.proxy.staticproxy;
+package com.danhuang.proxy.dynamicproxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

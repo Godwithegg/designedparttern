@@ -1,4 +1,4 @@
-package com.danhuang.proxy.dynamicproxy;
+package com.danhuang.proxy.staticproxy;
 
 /**
  * 代理对象什么都可以干，唯独不可以唱歌
