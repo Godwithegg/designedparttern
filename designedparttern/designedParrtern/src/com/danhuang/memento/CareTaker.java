@@ -10,7 +10,7 @@ public class CareTaker {
 
 	private EmpMemento memento;
 	
-	//private List<EmpMemento> list = new ArrayList<>();	通过这样的操作可以添加很多备忘点
+	//private List<EmpMemento> list = new ArrayList<>();	通过这样的操作可以添加很多备忘点，也可以使用栈来返回上一个备忘点
 
 	public EmpMemento getMemento() {
 		return memento;
